@@ -1,0 +1,1 @@
+document.write("This is a JS Test Code.. This Text come from a JavaScript Simple Code!");
