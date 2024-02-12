@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+  --defaul-personal-color-for-titles: 0.5px 1px 1px #554337; /* FIRST GLOBAL VARIABLE */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px rgb(127, 129, 126);
+  margin-top: 1px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  /* display: flex; */
+  margin: 9px;
+  border-radius: 9px;
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: auto; */
+  /* justify-content: space-around; */
+}
+
+/* THIS IS JUST A TEST */
+div {
+  border-style: none;
+  border-width: 5px;
+}
+
+label {
+  text-shadow: var(--defaul-personal-color-for-titles)
+}
+
+/* STYLE FOR PRODUCTS TYTLE */
+#product_title{
+  text-transform: uppercase;
+  text-shadow: var(--defaul-personal-color-for-titles)
+}
+
+#product_title:hover{
+  color: #e21f49;
+  font-size: 21px;
+}
+
+/* STYLE FOR PRODUCTS DESCRIPTION */
+#product_description{
+  text-align: justify;
+  text-justify: inter-word;
+  text-wrap: pretty;
+  word-spacing: 2px;
+  font-style: oblique;
+  font-size: small;
+}
+
+/* STYLE FOR PRODUCTS IMAGES */
+#product_image {
+  width: auto;
+  height: 350px;
+  object-fit: contain;
+  padding: 1px;  
+  /* border: 1px solid rgb(29, 27, 27); */
+}
