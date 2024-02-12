@@ -85,7 +85,7 @@
         <small> Tela de Contato com Usuários</small>
       </div>
       <div class="container">
-        <form action="/action_page.php">
+        <form action="/action_page.php" name="customerContactForm" method="post" onsubmit="return checkContentOnForm()">
           <label for="fname">Nome:</label>
           <input
             type="text"
@@ -104,6 +104,7 @@
 
           <label for="country">País de Origem a Escolher:</label>
           <select id="country" name="country">
+            <option value="">None</option>
             <option value="australia">Brasil</option>
             <option value="australia">Australia</option>
             <option value="canada">Canadá</option>
@@ -116,6 +117,8 @@
             name="subject"
             placeholder="Escreva seu Texto a enviar.."
             style="height: 200px"
+            minlength="20" 
+            maxlength="255"
           ></textarea>
 
           <input type="submit" value="Enviar MSN!" />
@@ -138,5 +141,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/formValidation.js"></script>
   </body>
 </html>
