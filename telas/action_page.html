@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Contatos</title>
+    <title>Action Page</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -81,17 +81,19 @@
     <main>
       <br />
       <div class="container text-md-left">
-        <h3>Formulário de Contatos...</h3>
+        <h3>Formulário de Contatos... ( Dados Recebidos - COM SUCESSO! )</h3>
         <small> Tela de Contato com Usuários</small>
       </div>
       <div class="container">
-        <form action="action_page.html" name="customerContactForm" method="get" onsubmit="return checkContentOnForm()" target="_blank">
+        <form name="customerContactForm" onsubmit="return false">
           <label for="fname">Nome:</label>
           <input
             type="text"
             id="fname"
             name="firstname"
             placeholder="Seu primeiro nome.."
+            readonly="true"
+            value="Some Data From Form"
           />
 
           <label for="lname">Sobrenome:</label>
@@ -100,16 +102,19 @@
             id="lname"
             name="lastname"
             placeholder="Seu Sobrenome Completo.."
+            readonly="true"
+            value="Some Data From Form"
           />
 
-          <label for="country">País de Origem a Escolher:</label>
-          <select id="country" name="country">
-            <option value="">None</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Austrália">Austrália</option>
-            <option value="Canadá">Canadá</option>
-            <option value="USA">USA - Estados Unidos da América</option>
-          </select>
+          <label for="country">País de Origem Escolhido</label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="Pais enviado"
+            readonly="true"
+            value="Some Data From Form"
+          />
 
           <label for="subject">Conteúdo de Texto da Mensagem:</label>
           <textarea
@@ -117,11 +122,12 @@
             name="subject"
             placeholder="Escreva seu Texto a enviar.."
             style="height: 200px"
-            minlength="10" 
+            minlength="20" 
             maxlength="255"
+            readonly="true"
           ></textarea>
 
-          <input type="submit" value="Enviar MSN!" />
+          <input type="submit" value="Enviar MSN!" hidden="true"/>
         </form>
         <br />
       </div>
@@ -141,7 +147,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/formValidation.js"></script>
-    <!-- <script src="../js/formGetData.js"></script> -->
+    <!-- <script src="../js/formValidation.js"></script> -->
+    <script src="../js/formGetData.js"></script>
   </body>
 </html>
