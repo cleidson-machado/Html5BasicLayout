@@ -63,18 +63,18 @@ label {
 }
 
 /* STYLE FOR PRODUCTS TYTLE */
-#product_title{
+#product-title{
   text-transform: uppercase;
   text-shadow: var(--defaul-personal-color-for-titles)
 }
 
-#product_title:hover{
+#product-title:hover{
   color: #e21f49;
   font-size: 21px;
 }
 
 /* STYLE FOR PRODUCTS DESCRIPTION */
-#product_description{
+#product-description{
   text-align: justify;
   text-justify: inter-word;
   text-wrap: pretty;
@@ -84,10 +84,34 @@ label {
 }
 
 /* STYLE FOR PRODUCTS IMAGES */
-#product_image {
+#product-image {
   width: auto;
   height: 350px;
   object-fit: contain;
   padding: 1px;  
   /* border: 1px solid rgb(29, 27, 27); */
+}
+
+#footer-text-adress {
+  color: rgb(139, 139, 135);
+  text-align: center;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer{
+    display: flex;
+  }
+  #footer-text-adress{
+    font-size: small;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-justify: inter-word;
+    text-wrap: pretty;
+  }
 }
