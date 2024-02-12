@@ -1,5 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/aerodynamic');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Aerodynamic', Arial, Helvetica, sans-serif;
 }
 
 :root{
