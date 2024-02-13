@@ -36,3 +36,8 @@ console.log('NAME: ', nameData.value)
 console.log('LASTNAME: ', lastNameData.value)
 console.log('COUNTRY: ', countryData.value)
 console.log('SUBJECT MSN: ', subjectData.value)
+
+// USEFUL HELP CONTENT FROM: WebStylePress - Channel
+// ( https://www.webstylepress.com/ )
+// ( https://youtu.be/CZP1iQFQjEY )
+// ( https://www.youtube.com/@webstylepress/playlists )
